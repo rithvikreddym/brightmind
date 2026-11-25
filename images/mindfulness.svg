@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Stacked stones and a leaf">
+  <rect width="400" height="300" fill="#fdf1cf"/>
+  <ellipse cx="200" cy="262" rx="130" ry="16" fill="#ecd48d" opacity="0.7"/>
+  <ellipse cx="200" cy="230" rx="86" ry="30" fill="#8ca89b"/>
+  <ellipse cx="200" cy="184" rx="62" ry="24" fill="#a9c2b4"/>
+  <ellipse cx="200" cy="145" rx="42" ry="19" fill="#c6d9cb"/>
+  <ellipse cx="200" cy="116" rx="26" ry="13" fill="#e0ece3"/>
+  <path d="M290 92 C330 70 352 100 332 132 C312 152 282 128 290 92Z" fill="#2c7a6b"/>
+  <path d="M292 96 C305 105 318 118 328 132" stroke="#d6ebd7" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

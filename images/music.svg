@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Sound waves and notes">
+  <rect width="400" height="300" fill="#e7f4e8"/>
+  <g fill="none" stroke="#2c7a6b" stroke-width="6" stroke-linecap="round">
+    <path d="M40 150 Q80 90 120 150 T200 150 T280 150 T360 150" opacity="0.9"/>
+    <path d="M40 175 Q80 125 120 175 T200 175 T280 175 T360 175" opacity="0.55"/>
+    <path d="M40 200 Q80 160 120 200 T200 200 T280 200 T360 200" opacity="0.3"/>
+  </g>
+  <g fill="#2c7a6b">
+    <ellipse cx="110" cy="85" rx="12" ry="9" transform="rotate(-20 110 85)"/>
+    <rect x="119" y="45" width="4" height="40" rx="2"/>
+    <ellipse cx="290" cy="70" rx="12" ry="9" transform="rotate(-20 290 70)"/>
+    <rect x="299" y="30" width="4" height="40" rx="2"/>
+    <path d="M123 45 Q140 52 140 66" stroke="#2c7a6b" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

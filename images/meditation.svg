@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Sunrise over calm water">
+  <rect width="400" height="300" fill="#fbe3e8"/>
+  <rect y="0" width="400" height="170" fill="#fcd9df"/>
+  <circle cx="200" cy="170" r="78" fill="#f6a9b8"/>
+  <circle cx="200" cy="170" r="52" fill="#f2889d"/>
+  <rect y="170" width="400" height="130" fill="#b7dbe9"/>
+  <ellipse cx="200" cy="190" rx="70" ry="6" fill="#f6a9b8" opacity="0.8"/>
+  <ellipse cx="200" cy="208" rx="50" ry="5" fill="#f6a9b8" opacity="0.6"/>
+  <ellipse cx="200" cy="224" rx="32" ry="4" fill="#f6a9b8" opacity="0.45"/>
+  <path d="M0 255 Q60 240 120 255 T240 255 T360 255 T480 255 V300 H0Z" fill="#9ccbdd"/>
+</svg>

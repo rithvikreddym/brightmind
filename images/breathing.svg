@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Concentric circles">
+  <rect width="400" height="300" fill="#e6f3f9"/>
+  <circle cx="200" cy="150" r="125" fill="#cfe6f0"/>
+  <circle cx="200" cy="150" r="95" fill="#a9d3e4"/>
+  <circle cx="200" cy="150" r="65" fill="#7fbcd6"/>
+  <circle cx="200" cy="150" r="36" fill="#2c7a6b"/>
+  <circle cx="190" cy="140" r="9" fill="#ffffff" opacity="0.55"/>
+</svg>
