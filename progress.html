@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progress | BrightMind</title>
+  <meta name="description" content="See your coins and your 7-day streak. Progress is saved on your own device.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Unbounded:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=9">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="index.html">BrightMind</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="exercises.html">Exercises</a></li>
+        <li><a href="progress.html" aria-current="page">Progress</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="center">
+      <h1>Progress</h1>
+    </div>
+
+    <div class="progress-wrap">
+      <section class="panel" aria-labelledby="coins-h">
+        <div class="coin-row">
+          <div>
+            <h2 id="coins-h" style="margin-bottom:0.2em">Coins</h2>
+            <p class="coin-label">10 coins every time you finish an activity.</p>
+          </div>
+          <div class="coin-count" aria-live="polite"><span class="coin-icon" aria-hidden="true"></span><span id="coin-count">0</span></div>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="streak-h">
+        <h2 id="streak-h">Streak Tracker</h2>
+        <ol class="streak" id="streak" aria-label="7 day streak">
+          <li><span class="dot"></span>Day 1</li>
+          <li><span class="dot"></span>Day 2</li>
+          <li><span class="dot"></span>Day 3</li>
+          <li><span class="dot"></span>Day 4</li>
+          <li><span class="dot"></span>Day 5</li>
+          <li><span class="dot"></span>Day 6</li>
+          <li><span class="dot"></span>Day 7</li>
+        </ol>
+        <p class="status" id="streak-status" aria-live="polite">Finish an activity to start your streak.</p>
+        <div class="controls" style="margin-top:1rem">
+          <a class="btn" href="exercises.html">Do an exercise</a>
+          <a class="btn btn-ghost" href="shop.html">Visit the shop</a>
+          <button class="btn btn-ghost" type="button" id="reset-progress">Reset progress</button>
+        </div>
+      </section>
+
+      <p class="status center" style="margin:1.25rem auto 0">Everything here is saved on this device only. No login, and I do not collect any personal information.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="about.html">About</a>
+    <a href="why.html">Why Us</a>
+  </footer>
+  <script src="js/script.js?v=9"></script>
+</body>
+</html>

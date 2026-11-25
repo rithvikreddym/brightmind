@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop | BrightMind</title>
+  <meta name="description" content="Spend your BrightMind coins on new colours. Everything is saved on your own device.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Unbounded:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=9">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="index.html">BrightMind</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="exercises.html">Exercises</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="shop.html" aria-current="page">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="center">
+      <h1>Shop</h1>
+      <p>Spend the coins you earn on new looks for BrightMind. Every activity stays free.</p>
+    </div>
+
+    <div class="progress-wrap">
+      <section class="panel" aria-labelledby="bal-h">
+        <div class="coin-row" style="margin-bottom:0">
+          <div>
+            <h2 id="bal-h" style="margin-bottom:0.2em">Your coins</h2>
+            <p class="coin-label">Finish an activity to earn 10 more.</p>
+          </div>
+          <div class="coin-count" aria-live="polite"><span class="coin-icon" aria-hidden="true"></span><span id="shop-coins">0</span></div>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="themes-h">
+        <h2 id="themes-h">Site colours</h2>
+        <p class="coin-label">Changes the colours on every page.</p>
+        <ul class="shop" id="shop-themes"></ul>
+      </section>
+
+      <section class="panel" aria-labelledby="orbs-h">
+        <h2 id="orbs-h">Breathing circle</h2>
+        <p class="coin-label">Changes the colour of the circle in the breathing exercise.</p>
+        <ul class="shop" id="shop-orbs"></ul>
+      </section>
+
+      <p class="status center" id="shop-msg" aria-live="polite" style="margin:1.25rem auto 0"></p>
+      <p class="center" style="margin-top:0.75rem"><a class="btn" href="exercises.html">Earn more coins</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="about.html">About</a>
+    <a href="why.html">Why Us</a>
+  </footer>
+  <script src="js/script.js?v=9"></script>
+</body>
+</html>

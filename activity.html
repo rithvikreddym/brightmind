@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activity | BrightMind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Unbounded:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=9">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="index.html">BrightMind</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="exercises.html" aria-current="page">Exercises</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="activity" id="activity">
+      <a class="back-link" href="exercises.html">Back to exercises</a>
+      <h1 id="activity-title">Activity</h1>
+      <p class="intro" id="activity-intro"></p>
+
+      <!-- 1. Breathing -->
+      <section class="panel act center" id="act-breathing" aria-label="Breathing exercise" hidden>
+        <p class="act-hint">In for 4 seconds, hold for 4, out for 6. Follow the circle.</p>
+        <div class="breath-stage">
+          <div class="breath-circle" id="breath-circle"></div>
+          <div class="breath-label" id="breath-label">Ready</div>
+        </div>
+        <div class="breath-meta">
+          <span>Seconds<br><strong id="phase-count">0</strong></span>
+          <span>Time left<br><strong id="time-left">3:00</strong></span>
+        </div>
+        <div class="controls center-controls">
+          <button class="btn" type="button" id="breath-start">Start</button>
+          <button class="btn btn-ghost" type="button" id="breath-stop" disabled>Stop</button>
+        </div>
+      </section>
+
+      <!-- 2. Meditation -->
+      <section class="panel act center" id="act-meditation" aria-label="Guided meditation" hidden>
+        <p class="step-count" id="med-step-label">Step 1 of 6</p>
+        <div class="step-bar" aria-hidden="true"><span id="med-bar"></span></div>
+        <div class="orb-stage" aria-hidden="true"><div class="orb" id="med-orb"></div></div>
+        <p class="step-text" id="med-text" aria-live="polite">Press Start when you are ready. Sound will begin softly.</p>
+        <div class="breath-meta">
+          <span>Time left<br><strong id="med-time">4:00</strong></span>
+        </div>
+        <div class="controls center-controls">
+          <button class="btn" type="button" id="med-start">Start</button>
+          <button class="btn btn-ghost" type="button" id="med-pause" disabled>Pause</button>
+          <button class="btn btn-ghost" type="button" id="med-reset" disabled>Restart</button>
+        </div>
+        <label class="vol">Volume
+          <input type="range" id="med-vol" min="0" max="1" step="0.05" value="0.8">
+        </label>
+      </section>
+
+      <!-- 3. Mindfulness 5-4-3-2-1 -->
+      <section class="panel act center" id="act-mindfulness" aria-label="5-4-3-2-1 mindfulness" hidden>
+        <p class="step-count" id="mf-stage-label">Stage 1 of 5</p>
+        <div class="step-bar" aria-hidden="true"><span id="mf-bar"></span></div>
+        <h2 class="mf-title" id="mf-title">5 things you can see</h2>
+        <p class="step-text" id="mf-text" aria-live="polite"></p>
+        <div class="taps" id="mf-taps" role="group" aria-label="Tap once for each thing you notice"></div>
+        <p class="act-hint" id="mf-count" aria-live="polite"></p>
+        <label class="vol">Calming sound
+          <button class="btn btn-ghost small" type="button" id="mf-sound">Play</button>
+        </label>
+      </section>
+
+      <!-- 4. Calming Music -->
+      <section class="panel act center" id="act-music" aria-label="Calming music" hidden>
+        <fieldset class="tracks">
+          <legend>Choose a track</legend>
+          <label><input type="radio" name="track" value="audio/calming.mp3" checked> Soft bells</label>
+          <label><input type="radio" name="track" value="audio/meditation.mp3"> Warm pad</label>
+          <label><input type="radio" name="track" value="audio/mindfulness.mp3"> Singing bowls</label>
+        </fieldset>
+        <div class="eq" id="eq" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="breath-meta">
+          <span>Listening time left<br><strong id="mu-time">5:00</strong></span>
+        </div>
+        <div class="controls center-controls">
+          <button class="btn" type="button" id="mu-play">Play</button>
+          <button class="btn btn-ghost" type="button" id="mu-pause" disabled>Pause</button>
+        </div>
+        <label class="vol">Volume
+          <input type="range" id="mu-vol" min="0" max="1" step="0.05" value="0.8">
+        </label>
+        <p class="act-hint">The timer counts down only while music is playing. If you cannot hear it, turn up your device volume or use headphones.</p>
+      </section>
+
+      <p class="audio-msg center" id="audio-msg" role="status"></p>
+
+      <!-- Finish -->
+      <section class="panel finish-panel center" id="finish-panel" aria-label="Finish">
+        <p class="act-hint" id="finish-hint">Complete the activity to unlock your coins.</p>
+        <button class="btn" type="button" id="btn-finish" disabled>Finish and collect 10 coins</button>
+        <p class="finish-note" id="finish-note" aria-live="polite"></p>
+      </section>
+
+      <audio id="audio" preload="none" loop></audio>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="about.html">About</a>
+    <a href="why.html">Why Us</a>
+  </footer>
+  <script src="js/script.js?v=9"></script>
+</body>
+</html>
